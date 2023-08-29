@@ -24,7 +24,7 @@ body {
     margin: auto;
     text-align: center;
 }
-#profile_picture {
+#profile-picture {
     height: 170px;
     border: 7px outset #b6b6b6;
 }
@@ -42,7 +42,7 @@ body {
     color: black;
     font-weight: bold;
   }
-  #työkokemus_title {
+  #työkokemus-title {
     text-align: center;
   }
   table {
