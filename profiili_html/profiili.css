@@ -24,7 +24,7 @@ body {
     margin: auto;
     text-align: center;
 }
-#profile-picture {
+#profile_picture {
     height: 170px;
     border: 7px outset #b6b6b6;
 }
