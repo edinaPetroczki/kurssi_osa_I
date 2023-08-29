@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(252, 244, 235);
+    border-top: 15px groove #919191;
+    width: 80%;
+    margin: auto;
+}
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  ::selection {
+    background: black;
+    color: rgb(252, 244, 235);
+  }
+  p {
+    font-size: large;
+    width: 90%;
+  }
+  li {
+    font-size: large;
+    list-style-type: circle;
+  }
+#title {
+    margin: auto;
+    text-align: center;
+}
+#profile_picture {
+    height: 170px;
+    border: 7px outset #b6b6b6;
+}
+.column {
+    float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  a {
+    color: black;
+    font-weight: bold;
+  }
+  #työkokemus_title {
+    text-align: center;
+  }
+  table {
+    border: 4px outset #919191;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    width: 60%;
+  }
+  th {
+    font-size: large;
+  }
+  td {
+    border-top: 2px solid #b6b6b6;
+    border-bottom: 2px solid #b6b6b6;
+    padding: 4px;
+    text-align: center;
+  }
+  fieldset {
+    padding-left: 15px;
+    padding-bottom: 30px;
+    margin: auto;
+    width: 70%;
+  }
+  legend {
+    margin: 20px;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  label {
+    font-weight: bold;
+  }
+  
+  .text {
+    width: 70%;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    margin: 10px;
+
+  }
+  .radio {
+    margin: 10px;
+  }
+  #selector {
+    margin: 10px;
+    padding: 4px 8px;
+  }
+  #textarea {
+    width: 90%;
+    height: 200px;
+    margin: 10px;
+  }
+  #submit {
+    background-color:  rgb(252, 244, 235);
+    font-weight: bold;
+    font-size: medium
+  }
+  #submit:hover {
+    background-color:  #ffffff;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
