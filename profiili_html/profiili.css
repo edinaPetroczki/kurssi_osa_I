@@ -12,9 +12,10 @@ body {
     background: black;
     color: rgb(252, 244, 235);
   }
-  p {
+  #main-text {
+    text-align: justify;
+    text-justify: distribute-all-lines;
     font-size: large;
-    width: 90%;
   }
   li {
     font-size: large;
@@ -24,13 +25,16 @@ body {
     margin: auto;
     text-align: center;
 }
-#profile_picture {
+#profile-picture {
     height: 170px;
     border: 7px outset #b6b6b6;
 }
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 .column {
-    float: left;
-  width: 33.33%;
   padding: 15px;
 }
 .row:after {
@@ -66,7 +70,7 @@ body {
     padding-left: 15px;
     padding-bottom: 30px;
     margin: auto;
-    width: 70%;
+    width: 70%; 
   }
   legend {
     margin: 20px;
