@@ -1,18 +1,13 @@
-body {
-    width: 90%;
-    margin: auto;
-}
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
+}       
+body {
+    background-color: rgb(255, 243, 230);
+    margin: auto;
 }
 h1, h2, h3 {
     text-align: center;
-    font-variant-caps: all-small-caps;
-}
-#title {
-    border: 5px dashed black;
-    border-radius: 30px;
 }
 #intro {
     margin: auto;
@@ -21,12 +16,11 @@ h1, h2, h3 {
 figure {
     text-align: center;
 }
-img {
+#piano-pictures {
     width: 100%;
     max-width: 500px;
     height: auto;
-    border:5px groove black;
-    border-radius: 90px;
+    border:4px dashed black;
 }
 .column {
     float: left;

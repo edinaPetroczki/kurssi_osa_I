@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fi-FI">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <?php include "header.php"; ?>
         <title>Verkkosivu - Piano</title>
         <link rel="stylesheet" href="verkkosivu.css">
     </head>
 
     <body>
+        <?php include "navbar.php"; ?>
         <div id="title">
             <h1>Pianosta</h1>
         </div>
@@ -18,7 +18,7 @@
             <h2>Nykyaikainen piano</h2>
         </div>
         <figure>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Grand_piano_and_upright_piano.jpg" alt="Kaksi esimerkkiä moderneista pianoista.Flyygeli (vasemmalla) ja pystypiano (oikealla)">
+            <img id="piano-pictures" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Grand_piano_and_upright_piano.jpg" alt="Kaksi esimerkkiä moderneista pianoista.Flyygeli (vasemmalla) ja pystypiano (oikealla)">
             <figcaption>Flyygeli (vasemmalla) ja pystypiano (oikealla)</figcaption>
         </figure>
         <div class="row">
@@ -61,7 +61,6 @@
                 <li><a href="https://www.dexibell.com/?lang=en" target="_blank">Dexibell</a></li>
                 <li><a href="https://kurzweil.com/" target="_blank">Kurzweil</a></li>
                 <li><a href="https://www.alesis.com/products/browse/category/digital-pianos" target="_blank">Alesis</a></li>
-
                 <li><a href="https://www.studiologic-music.com/" target="_blank">Studiologic</a></li>
             </ul>
             </div>

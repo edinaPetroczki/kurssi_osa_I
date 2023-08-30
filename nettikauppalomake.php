@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fi-FI">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <?php include "header.php"; ?>
         <title>Nettikaupan Rekisteröitymislomake</title>
         <link rel="stylesheet" href="nettikauppalomake.css">
     </head>
 
     <body>
+      <?php include "navbar.php"; ?>
         <div id="title">
             <h1>Nettikaupan Rekisteröitymislomake</h1>
         </div>
