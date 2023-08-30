@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fi-FI">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nettikaupan Rekisteröitymislomake</title>
+        <link rel="stylesheet" href="nettikauppa.css">
+    </head>
+
+    <body>
+        <div id="title">
+            <h1>Nettikaupan Rekisteröitymislomake</h1>
+        </div>
+        <form action="">
+            <div>
+                <label for="etunimi">Etunimi:</label><br>
+                    <input type="text" id="etunimi" name="etunimi" value="Esim.: Mikko"><br>
+                <label for="sukunimi">Sukunimi</label><br>
+                    <input type="text" id="sukunimi" name="sukunimi" value="Esim.: Mallinen"><br>
+                <label for="osoite">Katuosoite:</label><br>
+                    <input type="text" id="osoite" name="osoite" value="Esim.: Katutie 99 Z 1"><br>
+                <label for="postnumero">Postinumero:</label><br>
+                    <input type="number" id="postnumero" name="postnumero"><br>
+                <label for="postipaikka">Postitiomipaikka:</label><br>
+                    <input type="text" id="postipaikka" name="postipaikka" value="Esim.: Helsinki"><br>
+                <label for="puhelin">Puhelinumero:</label><br>
+                    <input type="tel" id="puhelin" name="puhelin" value="Esim.: +358449876543"><br>
+                <label for="email">Sähköpostiosoite :</label><br>
+                    <input type="email" id="email" name="email" value="Esim.: mikko.mallinen@email.fi"><br>
+            </div>
+            <div>
+                <label>Mistä osastoista olet kiinnostunut?</label><br>
+                    <input type="radio" name="etuja" value=”muoti” class="radio"> Muoti<br>
+                    <input type="radio" name="etuja" value=”urheilu” class="radio"> Urheilu<br>
+                    <input type="radio" name="etuja" value=”sisustaminen” class="radio"> Sisustaminen<br>
+                    <input type="radio" name="etuja" value=”pelit” class="radio"> Pelit<br>
+                    <input type="radio" name="etuja" value=”Elokuvat” class="radio"> Elokuvat<br>
+            </div>
+            <div>
+                <label>Maksutapa</label><br>
+                <select name=”syy” id="selector">
+                    <option disabled selected>...</option>
+                    <option>Sampo</option>
+                    <option>Nordea</option>
+                    <option>Osuuspankki</option>
+                    <option>Akita</option>
+                </select>
+            </div>
+            <div>
+                <label>Anna palautetta:</label><br>
+                <textarea rows="4" name=”palautus” id="textarea"></textarea><br>
+            </div>
+            <div>
+                <label>Olen lukenut ja hyväksyn tuotteiden toimitusehdot</label><br>
+                    <input type="radio" name="hyväksy" value=”kyllä” class="radio"> Kyllä<br>
+                    <input type="radio" name="hyväksy" value=”ei” class="radio"> Ei<br>
+            </div>
+            <div>
+                <input type="submit" value="Lähetä">
+            </div>
+        </form> 
+    </body>
+</html>
