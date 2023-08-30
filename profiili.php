@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="fi-FI">
     <head>
-        <meta charset="UTF-8">
+    <?php include "header.php"; ?>
         <title>Profiili</title>
         <link rel="stylesheet" href="profiili.css">
     </head>
 
     <body>
+        <?php include "navbar.php"; ?>
         <div id="title">
             <h1>Oma profiilini</h1>
         </div>
@@ -30,7 +31,7 @@
         <div id="main-text">
             <h2>Oma kuvaus</h2>
                 <p>
-                    Olen vastavalmistunut ohjelmistokehittäjä, jolla on utelias mieli ja erinomaiset ongelmanratkaisutaidot. Harjoittelijana <a href="https://www.nokia.com/" target="_blank">Nokia</a>lla kokeilin ohjelmistokehityksen alaa ja sain vahvistuksen soveltuvuudestani ammattiin.
+                    Olen vastavalmistunut ohjelmistokehittäjä, jolla on utelias mieli ja erinomaiset ongelmanratkaisutaidot. Harjoittelijana <a id="link" href="https://www.nokia.com/" target="_blank">Nokia</a>lla kokeilin ohjelmistokehityksen alaa ja sain vahvistuksen soveltuvuudestani ammattiin.
                 </p>
                 <p>
                     Intohimoni ohjelmointiin ja teknologiaan löysin kielitieteen opintojeni aikana. Meillä oli ollut laskennallisen lingvistiikan ja ohjelmoinnin johdantokurssi. Kurssin aikana pääsimme kokeilemaan koodausta Pythonilla. Yksinkertaisen ohjelman kirjoittaminen, josta tulostettiin "Hello World!" antoi minulle sellaisen tyytyväisyyden tunteen, kuin mikään muu ei olisi voinut ennen.
@@ -45,7 +46,7 @@
                 <li>Piano</li>
                 <li>Koodaaminen</li>
                 <li>Lukeminen</li>
-                <li>Vapaaehtoistyö <a href="https://www.hesy.fi/" target="_blank">HESY</a>:ssä</li>
+                <li>Vapaaehtoistyö <a id="link" href="https://www.hesy.fi/" target="_blank">HESY</a>:ssä</li>
             </ul>
         </div>
         <div>

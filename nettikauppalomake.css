@@ -1,13 +1,12 @@
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
-
 body {
-    width: 90%;
+    background-color: rgb(255, 243, 230);
     margin: auto;
 }
-
+       
 label {
     display: inline-block;
     width: 150px;
@@ -15,39 +14,33 @@ label {
     white-space: nowrap;
     font-variant-caps: all-small-caps;
 }
-
 select {
     padding: 3px;
 }
-
 form {
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ccc;
     max-width: 600px;
     border-radius: 5px;
-    background-color: rgb(247, 247, 247);
+    background-color: gb(255, 243, 230);
 }
-
 fieldset {
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: rgb(240, 240, 240);
+    background-color: gb(255, 243, 230);
 }
-
 footer {
     margin-left: 15%;
 
 }
-
 #title {
     font-variant-caps: all-small-caps;
 }
-
 #submit {
     font-weight: bold;
-    background-color: rgb(240, 240, 240);
+    background-color: gb(255, 243, 230);
 }
 
