@@ -23,8 +23,8 @@
             </div>
             <div class="column">
                 <h2>Yhteistiedot</h2>
-                    <p><b>Email:</b> petroczki.edina@gmail.com<br>
-                    <b>Puhelin:</b> +358 44 2371492</p>
+                    <p><b>Email:</b> edinap@examplemail.com<br>
+                    <b>Puhelin:</b> +358 44 9876543</p>
             </div>
         </div>
         <div id="main-text">
