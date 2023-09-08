@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fi-FI">
     <head>
-        <?php include "header.php"; ?>
+        <?php include "navbar.php"; ?>
         <title>Verkkosivu - Piano</title>
+        <link rel="stylesheet" href="site.css">
         <link rel="stylesheet" href="verkkosivu.css">
     </head>
 
     <body>
-        <?php include "navbar.php"; ?>
         <div id="title">
             <h1>Pianosta</h1>
         </div>

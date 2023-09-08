@@ -1,116 +1,100 @@
-* {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-}     
-body {
-    background-color: rgb(255, 243, 230);
-    margin: auto;
+:root {
+    --bone: #DAD0BE;
 }
-::selection {
-    background: black;
-    color: rgb(252, 244, 235);
-}
+
 #main-text {
     text-align: justify;
-    text-justify: distribute;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: large;
 
 }
+
+#lista {
+    margin-left: 10%;
+}
+
 li {
     font-size: large;
     list-style-type: circle;
 }
-#title {
-    margin: auto;
-    text-align: center;
-}
+
 #profile-picture {
     height: 170px;
-    border: 7px outset #b6b6b6;
+    border: 5px outset var(--bone);
+    border-radius: 9px;
 }
+
 .row {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
+
 .column {
   padding: 15px;
 }
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-#link {
+
+.link {
     color: black;
     font-weight: bold;
 }
+
 #työkokemus-title {
     text-align: center;
 }
+
 table {
-    border: 4px outset #919191;
+    border: 4px dashed var(--bone);
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 70px;
     width: 60%;
 }
+
 th {
     font-size: large;
 }
+
 td {
-    border-top: 2px solid #b6b6b6;
-    border-bottom: 2px solid #b6b6b6;
+    border-top: 2px solid var(--bone);
+    border-bottom: 2px solid var(--bone);
     padding: 4px;
     text-align: center;
 }
-fieldset {
-    padding-left: 15px;
-    padding-bottom: 30px;
-    margin: auto;
-    width: 70%; 
-}
-legend {
-    margin: 20px;
-    font-weight: bold;
-    font-size: x-large;
-}
-label {
-    font-weight: bold;
-}
-  
-.text {
-    width: 70%;
-    padding: 8px 20px;
-    box-sizing: border-box;
-    margin: 10px;
 
+
+.text {
+    min-width: 60%;
 }
-.radio {
+
+textarea {
+    height: 150px;
+    padding: 8px 20px;
     margin: 10px;
+    min-width: 60%;
 }
-#selector {
-    margin: 10px;
-    padding: 4px 8px;
-}
-#textarea {
-    width: 90%;
-    height: 200px;
-    margin: 10px;
-}
-#submit {
-    background-color:  rgb(252, 244, 235);
-    font-weight: bold;
-    font-size: medium
-}
-#submit:hover {
-    background-color:  #ffffff;
-}
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-}
+
 footer {
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+      justify-content: center;
+    }
+    #sukupuoli {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
 }

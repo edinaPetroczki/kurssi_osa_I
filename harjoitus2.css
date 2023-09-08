@@ -1,37 +1,30 @@
-* {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-}        
-body {
-    margin: 0; 
-    background-color: rgb(255, 243, 230);
-}
 #sailio {
     width: 1000px;
     margin: auto;
 }
+
 .container {
     display:flex;
     justify-content: center;
     width: 100%;
     position: relative;
 }  
+
 #navi1 {
     position: absolute;
     top: 0;
     left: 0;
 }
+
 #navi2{
     position: absolute;
     top: 0;
     right: 0;
 }
+
 #sisalto {
     width: 650px;
     position: relative;
     display: inline-block;
     
 }
-footer {
-    text-align: center;
-}  

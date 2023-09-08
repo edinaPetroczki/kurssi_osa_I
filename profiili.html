@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <title>Profiili</title>
         <link rel="stylesheet" href="profiili.css">
+        <link rel="stylesheet" href="site.css">
+
     </head>
 
     <body>
@@ -12,7 +14,7 @@
         </div>
         <div class="row">
             <div class="column">
-                <img id="profile-picture" src="profile_picture.jpg" alt="Hymyilevä nainen hatussa, huivissa ja takissa talvimaisema taustalla">
+                <img id="profile-picture" src="Kuvat/profile_picture.jpg" alt="Hymyilevä nainen hatussa, huivissa ja takissa talvimaisema taustalla">
             </div>
             <div class="column">
                 <h2>Perustiedot</h2>
@@ -30,7 +32,7 @@
         <div id="main-text">
             <h2>Oma kuvaus</h2>
                 <p>
-                    Olen vastavalmistunut ohjelmistokehittäjä, jolla on utelias mieli ja erinomaiset ongelmanratkaisutaidot. Harjoittelijana <a href="https://www.nokia.com/" target="_blank">Nokia</a>lla kokeilin ohjelmistokehityksen alaa ja sain vahvistuksen soveltuvuudestani ammattiin.
+                    Olen vastavalmistunut ohjelmistokehittäjä, jolla on utelias mieli ja erinomaiset ongelmanratkaisutaidot. Harjoittelijana <a class="link" href="https://www.nokia.com/" target="_blank">Nokia</a>lla kokeilin ohjelmistokehityksen alaa ja sain vahvistuksen soveltuvuudestani ammattiin.
                 </p>
                 <p>
                     Intohimoni ohjelmointiin ja teknologiaan löysin kielitieteen opintojeni aikana. Meillä oli ollut laskennallisen lingvistiikan ja ohjelmoinnin johdantokurssi. Kurssin aikana pääsimme kokeilemaan koodausta Pythonilla. Yksinkertaisen ohjelman kirjoittaminen, josta tulostettiin "Hello World!" antoi minulle sellaisen tyytyväisyyden tunteen, kuin mikään muu ei olisi voinut ennen.
@@ -39,13 +41,13 @@
                     Vaikka olen syntynyt ja kasvanut Unkarissa, pidän Suomea kotinani. Täyttää minut suurella ylpeydellä, että saan asua täällä.
                 </p>
         </div>
-        <div>
+        <div id="lista">
             <h2>Harrastukset</h2>
             <ul>
                 <li>Piano</li>
                 <li>Koodaaminen</li>
                 <li>Lukeminen</li>
-                <li>Vapaaehtoistyö <a href="https://www.hesy.fi/" target="_blank">HESY</a>:ssä</li>
+                <li>Vapaaehtoistyö <a class="link" href="https://www.hesy.fi/" target="_blank">HESY</a>:ssä</li>
             </ul>
         </div>
         <div>
@@ -64,28 +66,29 @@
             </table>
         </div>
         <div>
-            <form>
+            <form action="" method="post">
                 <fieldset>
                 <legend>Yhteydenotto</legend>
                 <label>Nimi</label><br>
-                <input type="text" name=”nimi” class="text"><br>
-                <label>Email</label><br>
-                <input type="text" name=”email” class="text"><br>
-                <label>Sukupuoli</label><br>
-                <input type="radio" name=”sukupuoli” value=”mies” class="radio"> Mies
-                <input type="radio" name=”sukupuoli” value=”nainen” class="radio"> Nainen
-                <input type="radio" name=”sukupuoli” value=”en-haluasanoa” class="radio"> En halua sanoa<br>
+                    <input type="text" name=”nimi” class="text"><br>
+                    <label>Email</label><br>
+                    <input type="text" name=”email” class="text"><br>
+                <label id="sukupuoli">Sukupuoli</label><br>
+                    <input type="radio" name=”sukupuoli” value=”mies” class="radio"> Mies
+                    <input type="radio" name=”sukupuoli” value=”nainen” class="radio"> Nainen
+                    <input type="radio" name=”sukupuoli” value=”en-haluasanoa” class="radio"> En halua sanoa<br>
                 <label>Yhteydenoton syy</label><br>
-                <select name=”syy” id="selector">
+                <select name=”syy”>
                     <option disabled selected>...</option>
                     <option>Työtarjous</option>
                     <option>Muu</option>
                 </select><br>
                 <label>Viesti</label><br>
-                <textarea name=”viesti” id="textarea"></textarea><br>
-                <input type="submit" value="Lähetä" id="submit">
+                    <textarea name=”viesti” id="textarea"></textarea><br>
+                    <input type="submit" value="Lähetä" id="submit">
                 </fieldset>
-                </form>                
+            </form>
+            <br>                
         </div>
     </body>
 </html>

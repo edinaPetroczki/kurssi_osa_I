@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="fi-FI">
     <head>
-      <?php include "header.php"; ?>
+      <?php include "navbar.php"; ?>
         <title>Nettikaupan Rekisteröitymislomake</title>
         <link rel="stylesheet" href="nettikauppalomake.css">
+        <link rel="stylesheet" href="site.css">
     </head>
 
     <body>
-      <?php include "navbar.php"; ?>
-        <div id="title">
-            <h1>Nettikaupan Rekisteröitymislomake</h1>
+      <div id="title">
+          <h1>Nettikaupan Rekisteröitymislomake</h1>
         </div>
 
-        <div class="w3-container">
+        <div class="container">
           <form action="" method="post">
             
             <div>
@@ -27,7 +27,7 @@
                 <label for="city">Postitoimipaikka:</label>
                 <input type="text" id="city" name="city"><br><br>
                 <label for="phone">Puhelinnumero:</label>
-                <input type="text" id="phone" name="phone" placeholder="358XX1234567"><br><br>
+                <input type="text" id="phone" name="phone" placeholder="00358XX1234567"><br><br>
                 <label for="email">Sähköpostiosoite:</label>
                 <input type="email" id="email" name="email" placeholder="etunimi.sukunimi@yritys.fi"><br><br>
               </fieldset>
@@ -40,23 +40,25 @@
             </fieldset>
             </div>
 
+            <br>
             <div>
             <label>Mistä osastoista olet kiinnostunut?</label><br>
-            <input type="checkbox" id="fashion" name="interest" value="Muoti">
+              <input type="checkbox" id="fashion" name="interest" value="Muoti">
             <label for="fashion">Muoti</label><br>
-            <input type="checkbox" id="sports" name="interest" value="Urheilu">
+              <input type="checkbox" id="sports" name="interest" value="Urheilu">
             <label for="sports">Urheilu</label><br>
-            <input type="checkbox" id="decor" name="interest" value="Sisustaminen">
+              <input type="checkbox" id="decor" name="interest" value="Sisustaminen">
             <label for="decor">Sisustaminen</label><br>
-            <input type="checkbox" id="games" name="interest" value="Pelit">
+              <input type="checkbox" id="games" name="interest" value="Pelit">
             <label for="games">Pelit</label><br>
-            <input type="checkbox" id="movies" name="interest" value="Elokuvat">
+              <input type="checkbox" id="movies" name="interest" value="Elokuvat">
             <label for="movies">Elokuvat</label><br><br>
             </div>
 
             <div>
             <label for="payment">Maksutapa:</label>
             <select id="payment" name="payment">
+              <option disabled selected>...</option>
               <option value="sampo">Sampo</option>
               <option value="nordea">Nordea</option>
               <option value="osuuspankki">Osuuspankki</option>
@@ -77,7 +79,7 @@
             <label for="no">Ei</label><br><br>
             </div>
 
-            <input id="submit" type="submit" value="Lähetä">
+            <input id="submit" type="submit" value="Lähetä" id="submit">
 
           </form>
         </form> 
