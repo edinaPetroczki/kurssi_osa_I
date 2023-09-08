@@ -7,7 +7,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: rgb(255, 243, 230);
+    background-color: #fffaf0;
 }
 footer {
     text-align: center;

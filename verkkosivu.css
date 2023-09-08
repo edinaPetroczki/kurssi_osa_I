@@ -1,37 +1,34 @@
-* {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-}       
-body {
-    background-color: rgb(255, 243, 230);
-    margin: auto;
+:root {
+    --floralwhite:  #fffaf0;
+    --bone: #DAD0BE;
 }
+
 h1, h2, h3 {
     text-align: center;
 }
+
 #intro {
-    margin: auto;
     text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;  
 }
+
 figure {
     text-align: center;
 }
+
 #piano-pictures {
-    width: 100%;
     max-width: 500px;
-    height: auto;
-    border:4px dashed black;
+    border: 5px outset var(--bone);
+    border-radius: 9px;
 }
+
 .column {
     float: left;
-    width: 50%;
-    padding: 10px;
+    width: 40%;
     text-align: justify;
-}
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
+    margin-left: 5%;
+    margin-right: 5%; 
 }
 .row:after {
     content: "";
@@ -42,19 +39,28 @@ figure {
     margin-left: 30%;
 
 }
-li {
-    list-style-type:square;
+ul {
+    list-style: none;
+  }
+  
+ul li {
+    background-image: url('Kuvat/link.png');
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-bottom: 5px;
 }
+
 a {
     color: black;
     text-decoration: none;
 }
 a:hover {
     background-color: black;
-    color: white;
+    color: var(--floralwhite);
 }
 table {
-    border: 4px dashed black;
+    border: 4px dashed var(--bone);
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -63,13 +69,19 @@ table {
   }
 th {
     font-size: large;
-    border-bottom: 2px solid #bbbbbb;
+    border-bottom: 2px solid var(--bone);
   }
 td {
-    border-top: 2px solid #bbbbbb;
+    border-top: 2px solid var(--bone);
     padding: 4px;
     text-align: center;
 }
-footer {
-    text-align: center;
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 90%;
+    }
+    #piano-pictures {
+        width: 90%;
+    }
 }

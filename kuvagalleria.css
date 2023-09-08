@@ -1,51 +1,48 @@
-* {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-}        
 body {
-    margin: 0; 
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: rgb(255, 243, 230);
 }
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
 }
+
 .gallery-item {
     flex: 0 0;
     min-width: 100%;
     box-sizing: border-box;
     text-align: center;
 }
+
 .gallery-item img {
     max-width: 270px;
     height: 210px;
     object-fit: cover;
     object-position: 25% 25%;
 }
+
 @media (min-width: 600px) {
     .gallery-item {
       min-width: 50%;
     }
 }
+
 @media (min-width: 770px) {
     .gallery-item {
       min-width: 33.333%;
     }
 }
+
 @media (min-width: 990px) {
     .gallery-item {
       min-width: 25%;
     }
 }
+
 @media (min-width: 1200px) {
     .gallery-item {
       min-width:25%;
     }
 }
-footer {
-    text-align: center;
-}
-  

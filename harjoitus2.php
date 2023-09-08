@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php include "header.php"; ?>
+        <?php include "navbar.php"; ?>
         <link rel="icon" href="logo.png">
+        <link rel="stylesheet" href="site.css">
         <link rel="stylesheet" href="harjoitus2.css">
         <title>CSS-asemointiharjoitus</title>
     </head>
     <body>
-        <?php include "navbar.php"; ?>
         <div id="sailio">
             <div class="container">
                 <div id="navi1">

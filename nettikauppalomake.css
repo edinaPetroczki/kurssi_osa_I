@@ -1,46 +1,23 @@
-* {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-}
-body {
-    background-color: rgb(255, 243, 230);
-    margin: auto;
-}
-       
-label {
-    display: inline-block;
-    width: 150px;
-    margin-right: 5px;
-    white-space: nowrap;
-    font-variant-caps: all-small-caps;
-}
-select {
-    padding: 3px;
+.container {
+    display: flex;
+    justify-content: space-around;
 }
 form {
+    width: 550px;
     margin: 10px 0;
     padding: 10px;
-    border: 1px solid #ccc;
-    max-width: 600px;
-    border-radius: 5px;
-    background-color: gb(255, 243, 230);
+    border: 1px solid #DAD0BE;
+    border-radius: 6px;
+    background-color: #fffaf0;
 }
-fieldset {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: gb(255, 243, 230);
-}
-footer {
-    margin-left: 15%;
-
+body {
+    background: url(Kuvat/paperbags.jpg)  no-repeat center fixed;
+    opacity: 0.9;
 }
 #title {
-    font-variant-caps: all-small-caps;
+    background-color: #fffaf0;
+    border-top: 1px solid black;
+    border-radius: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-#submit {
-    font-weight: bold;
-    background-color: gb(255, 243, 230);
-}
-
