@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fi-FI">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Kuvat/logo.png">
+    <title>Neilikka: Sisäkasvit: Varjoviikuna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sisäkasvit</h1>
+    </header>
+<!-------------------- Navigation ------------------------>
+    <nav class="nav" id="my-nav">
+            <a href="etusivu.html">Etusivu</a>
+            <div class="tuoteet" id="active">
+                <button class="dropbtn">Tuoteet
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="tuoteet-content">
+                    <a href="sisäkasvit.html" class="active">Sisäkasvit</a>
+                    <a href="#">Ulkokasvit</a>
+                    <a href="#">Työkalut</a>
+                    <a href="#">Kasvien hoito</a>
+                </div>
+            </div> 
+            <a href="tietoa.html">Tietoa meistä</a>
+            <a href="lomake.html">Ota Yhteyttä</a>
+            <a href="ostoskori.html" id="cart-icon" ><i class="fas fa-shopping-cart"></i> Ostoskori</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+<!-------------------- Breadcrumbs ------------------------>
+    <div>
+        <ul class="breadcrumb">
+            <li><a href="tietoa.html">Tuoteet</a></li>
+            <li><a href="sisäkasvit.html">Sisäkasvit</a></li>
+            <li>Varjoviikuna</li>
+          </ul>
+    </div>
+
+    <main class="kuvaus">
+        <div>
+            <h2>Varjoviikuna</h2>
+        </div>
+        <div class="product-details">
+            <div class="product-image">
+                <img src="Kuvat/ginseng-bonsai.png" alt="Product Image">
+            </div>
+            
+            <div class="product-description">
+                <h5>Veden tarve: Kohtalainen</h5>
+                <h5>Valon tarve: Puolivarjo</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel vestibulum dolor, sed rhoncus ex. Pellentesque et congue justo, eu luctus lectus. Aenean interdum eget ante ac eleifend. Sed sollicitudin ex tellus, sed imperdiet quam aliquet ut. Phasellus gravida ac eros nec iaculis. Maecenas non molestie risus. Aenean sit amet eros vitae nisi ornare vulputate eget quis enim. Morbi sagittis eleifend efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla quis ante et convallis. In faucibus est quis justo sollicitudin, vel luctus justo convallis. Nulla fermentum diam sed magna euismod, vitae lobortis augue bibendum. Suspendisse potenti. Ut sit amet magna accumsan, maximus ligula in, convallis augue. Phasellus eu lacus sem.</p>
+                <p class="price">Hinta: €5.99</p>
+                <p class="availability">Saatavuus: yli 20 kpl</p>
+            <button>Lisää ostoskoriin</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Web-ohjelmointikoulutus</p>
+    </footer>
+<!-------------------- Javascript Code ------------------------>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("my-nav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+
+</body>
+</html>
