@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fi-FI">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Kuvat/logo.png">
+    <title>Neilikka: Tietoa meistä</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tietoa meistä: </h1>
+    </header>
+<!-------------------- Navigation ------------------------>
+    <nav class="nav" id="my-nav">
+            <a href="etusivu.html">Etusivu</a>
+            <div class="tuoteet" >
+                <button class="dropbtn">Tuoteet
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="tuoteet-content">
+                    <a href="sisäkasvit.html">Sisäkasvit</a>
+                    <a href="#">Ulkokasvit</a>
+                    <a href="#">Työkalut</a>
+                    <a href="#">Kasvien hoito</a>
+                </div>
+            </div> 
+            <a href="tietoa.html"class="active">Tietoa meistä</a>
+            <a href="lomake.html">Ota Yhteyttä</a>
+            <a href="ostoskori.html" id="cart-icon" ><i class="fas fa-shopping-cart"></i> Ostoskori</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+
+    <main>
+        <div class="about-description">
+            <h2>Tietoa mestä:</h2>
+            <p>Puutarhaliike Neilikka on vuonna 1990 perustettu puutarhanhoitoon ja huonekasveihin erikoistunut myymäläketju. Ensimmäinen myymälämme perustettiin Helsingin Fabianinkadulle, ja toukokuussa 1997 perustimme ketjun toisen myymälän Espooseen.</p>
+            <p>Meiltä löydät kattavan valikoiman sisä- ja ulkokasveja sekä tietysti kaikki työkalut ja muut tarvikkeet niiden hoitoon. Osaava ja puutarhanhoidosta innostunut henkilökuntamme on aina valmiina auttamaan sinua valitsemaan juuri sinulle sopivimmat tuotteet.</p>      
+        </div>
+        
+        <div class="shop-locations">
+            <h2>Myymälät</h2>
+            <div class="about-map">
+                <img src="Kuvat/map.png" alt="map example">
+            </div>
+            <ul>
+                <li>
+                    <h3>Puutarhaliike Neilikka, Helsinki</h3>
+                    <address>
+                        Fabianinkatu 42<br>
+                        00100 Helsinki<br>
+                        Puh. xx-xxxxxxx<br>
+                        Sähköposti: helsinki@puutarhaliikeneilikka.fi
+                    </address>
+                    <h4>Avoinna</h4>
+                    <p>ma-ke 9-17</p>
+                    <p>la 12-18</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="shop-locations">
+            <div class="about-map">
+                <br>
+                <br>
+                <br>
+                <img src="Kuvat/map.png" alt="map example">
+            </div>
+            <ul>
+                <li>
+                    <h3>Puutarhaliike Neilikka, Espoo</h3>
+                    <address>
+                        Kivenlahdentie 10<br>
+                        Kivenlahdentie 10<br>
+                        PPuh. xx-xxxxxxx<br>
+                        Sähköposti: espoo@puutarhaliikeneilikka.fi
+                    </address>
+                    <h4>Avoinna</h4>
+                    <p>ma-ke 9-17</p>
+                    <p>la 12-18</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Web-ohjelmointikoulutus</p>
+    </footer>
+<!-------------------- Javascript Code ------------------------>
+<!------add X toggle button for closing the mobile menu...-->
+<!------change "ostoskori" to just icon in mobile menu...-->
+<!------maybe refactor menu to php file as a separate module, with JS in sep. file...-->
+<!--- toggle headder in mobile view?-->
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("my-nav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+
+</body>
+</html>

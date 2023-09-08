@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fi-FI">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Kuvat/logo.png">
+    <title>Neilikka: Etusivu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tervetuloa! </h1>
+    </header>
+<!-------------------- Navigation ------------------------>
+    <nav class="nav" id="my-nav">
+            <a href="etusivu.html" class="active">Etusivu</a>
+            <div class="tuoteet" >
+                <button class="dropbtn">Tuoteet
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="tuoteet-content">
+                    <a href="sisäkasvit.html">Sisäkasvit</a>
+                    <a href="#">Ulkokasvit</a>
+                    <a href="#">Työkalut</a>
+                    <a href="#">Kasvien hoito</a>
+                </div>
+            </div> 
+            <a href="tietoa.html">Tietoa meistä</a>
+            <a href="lomake.html">Ota Yhteyttä</a>
+            <a href="ostoskori.html" id="cart-icon" ><i class="fas fa-shopping-cart"></i> Ostoskori</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+
+    <main>
+        <div id="greeting">
+            <p>Tervetuloa Puutarhaliike Neilikan kotisivuille! </p>
+            <p>Meiltä löydät sekä sisä- että ulkokasvit ja kaiken tarvitsemasi kasvien hoitoon.</p>
+        </div>
+
+        <div id="news">
+            <h2>Uutisia</h2>
+
+            <section class="news-article">
+                <h2>Hyvää uutta vuotta!</h2>
+                <p>Julkaistu: 02.01.2016</p>
+                <p>Hyvää uutta vuotta! Uuden vuoden kunniaksi myymälöissämme upeita tarjouksia.</p>
+                <button>Lue lisää</button>
+            </section>
+    
+            <section class="news-article">
+                <h2>Hyvää joulua!</h2>
+                <p>Julkaistu: 14.12.2015</p>
+                <p>Joulukukat edullisesti meiltä. Myymälöissämme myös kattava ja edullinen valikoima joulukuusia.</p>
+                <button>Lue lisää</button>
+            </section>
+    
+            <section class="news-article">
+                <h2>Talvi on tulossa!</h2>
+                <p>Julkaistu: 01.09.2015</p>
+                <p>Nyt on hyvä aika aloittaa puutarhan valmistelu talven lepokautta varten. Meiltä löydät kaikki työkalut ja tarvikkeet.</p>
+                <button>Lue lisää</button>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Web-ohjelmointikoulutus</p>
+    </footer>
+<!-------------------- Javascript Code ------------------------>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("my-nav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+
+</body>
+</html>

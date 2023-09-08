@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fi-FI">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Kuvat/logo.png">
+    <title>Neilikka: Ota yhteyttä!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ota Yhteyttä </h1>
+    </header>
+<!-------------------- Navigation ------------------------>
+    <nav class="nav" id="my-nav">
+            <a href="etusivu.html">Etusivu</a>
+            <div class="tuoteet" >
+                <button class="dropbtn">Tuoteet
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="tuoteet-content">
+                    <a href="sisäkasvit.html">Sisäkasvit</a>
+                    <a href="#">Ulkokasvit</a>
+                    <a href="#">Työkalut</a>
+                    <a href="#">Kasvien hoito</a>
+                </div>
+            </div> 
+            <a href="tietoa.html">Tietoa meistä</a>
+            <a href="lomake.html" class="active">Ota Yhteyttä</a>
+            <a href="ostoskori.html" id="cart-icon" ><i class="fas fa-shopping-cart"></i> Ostoskori</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+    
+    <main>
+        <section class="contact-form">
+            <h2>Yhteydenottolomake</h2>
+
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="name">Nimi:</label>
+                    <input type="text" id="name" name="name" required placeholder="Etunimi Sukunimi"><br>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="etunimi.sukunimi@yritys.fi"><br>
+                </div>
+    
+                <div class="form-group">
+                    <label for="name">Aihe:</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Kysymyksiä toimitustiedoista"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Viesti:</label>
+                    <textarea id="message" name="message" rows="8" required></textarea><br>
+                </div>
+
+                <div class="form-group-question">
+                    <label>Haluan tilata Puutarhaliike Neilikan uutiskirjeen:</label><br>
+                    <input type="radio" id="yes" name="terms" value="yes">
+                    <label for="yes">Kyllä</label><br>
+                    <input type="radio" id="no" name="terms" value="no">
+                    <label for="no">Ei</label><br><br>
+                </div>
+    
+                <div class="form-group">
+                    <br>
+                    <button type="submit" value="lähetä">Lähetä</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Web-ohjelmointikoulutus</p>
+    </footer>
+<!-------------------- Javascript Code ------------------------>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("my-nav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+
+</body>
+</html>

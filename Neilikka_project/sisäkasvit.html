@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fi-FI">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Kuvat/logo.png">
+    <title>Neilikka: Sisäkasvit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sisäkasvit</h1>
+    </header>
+<!-------------------- Navigation ------------------------>
+    <nav class="nav" id="my-nav">
+            <a href="etusivu.html">Etusivu</a>
+            <div class="tuoteet" id="active">
+                <button class="dropbtn">Tuoteet
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="tuoteet-content">
+                    <a href="sisäkasvit.html" class="active">Sisäkasvit</a>
+                    <a href="#">Ulkokasvit</a>
+                    <a href="#">Työkalut</a>
+                    <a href="#">Kasvien hoito</a>
+                </div>
+            </div> 
+            <a href="tietoa.html">Tietoa meistä</a>
+            <a href="lomake.html">Ota Yhteyttä</a>
+            <a href="ostoskori.html" id="cart-icon" ><i class="fas fa-shopping-cart"></i> Ostoskori</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+<!-------------------- Breadcrumbs ------------------------>
+    <div>
+        <ul class="breadcrumb">
+            <li><a href="tietoa.html">Tuoteet</a></li>
+            <li>Sisäkasvit</li>
+          </ul>
+    </div>
+
+    <main>
+        <section class="product">
+            <a target="_blank" href="kuvaus.html" ><img src="Kuvat/ginseng-bonsai.png" alt="Varjoviikuna ruukussa muistilehtiön vieressä"></a>
+            <h3>Varjoviikuna</h3>
+            <p>Korkeus 15 cm</p>
+            <p class="price">Hinta: €5.99</p>
+            <button>Lisää ostoskoriin</button>
+        </section>
+
+        <section class="product">
+            <img src="Kuvat/aloevera.png" alt="inikokoinen Aloe vera">
+            <h3>Minikokoinen Aloe vera</h3>
+            <p>Korkeus 10 cm</p>
+            <p class="price">Hinta: €3.99</p>
+            <button>Lisää ostoskoriin</button>
+        </section>
+
+        <section class="product">
+            <img src="Kuvat/mexican-snow-ball.png" alt="Minikokoinen Mehiruusuke">
+            <h3>Minikokoinen Mehiruusuke</h3>
+            <p>Korkeus 7cm</p>
+            <p class="price">Hinta: €6.99</p>
+            <button>Lisää ostoskoriin</button>
+        </section>
+        
+        <section class="product">
+            <img src="Kuvat/haworthia-cooperi.png" alt="Kirjotähti ruukussa">
+            <h3>Kirjotähti</h3>
+            <p>Korkeus 10cm</p>
+            <p class="price">Hinta: €7.99</p>
+            <button>Lisää ostoskoriin</button>
+        </section>
+
+        <section class="product">
+            <img src="Kuvat/cactus.png" alt="Minikaktus">
+            <h3>Minikaktus</h3>
+            <p>Korkeus 6cm</p>
+            <p class="price">Hinta: €2.99</p>
+            <button>Lisää ostoskoriin</button>
+        </section>
+
+        <section class="product">
+            <img src="Kuvat/jade-plant.png" alt="Rahapuu">
+            <h3>Rahapuu</h3>
+            <p>Korkeus 15cm</p>
+            <p class="price">Hinta: €9.99</p>
+            <button>Lisää ostoskoriin</button>
+        </section>
+
+        <section class="product">
+            <img src="Kuvat/mosoes-in-the-cradle.png" alt=" Pinkki Juoru">
+            <h3>Juoru</h3>
+            <p>Korkeus 10 cm</p>
+            <p class="price">Hinta: €9.99</p>
+            <button>Lisää ostoskoriin</button>
+        </section>
+
+        <section class="product">
+            <img src="Kuvat/snake-plant.png" alt="Iso anopinkieli">
+            <h3> Iso anopinkieli</h3>
+            <p>Korkeus 35 cm</p>
+            <p class="price">Hinta: €24.99</p>
+            <button>Lisää ostoskoriin</button>
+        </section>
+
+        <section class="product">
+            <img src="Kuvat/hypoesteses.png" alt="Pilkkulehti mix">
+            <h3>Pilkkulehti mix</h3>
+            <p>Korkeus 25cm</p>
+            <p class="price">Hinta: €19.99</p>
+            <button>Lisää ostoskoriin</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Web-ohjelmointikoulutus</p>
+    </footer>
+<!-------------------- Javascript Code ------------------------>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("my-nav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+
+</body>
+</html>

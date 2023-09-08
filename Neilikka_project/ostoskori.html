@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fi-FI">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Kuvat/logo.png">
+    <title>Neilikka: Ostoskori</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Ostoskori</h1>
+    </header>
+<!-------------------- Navigation ------------------------>
+    <nav class="nav" id="my-nav">
+        <a href="etusivu.html">Etusivu</a>
+        <div class="tuoteet">
+            <button class="dropbtn">Tuoteet
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="tuoteet-content">
+                <a href="sisäkasvit.html">Sisäkasvit</a>
+                <a href="#">Ulkokasvit</a>
+                <a href="#">Työkalut</a>
+                <a href="#">Kasvien hoito</a>
+            </div>
+        </div> 
+        <a href="tietoa.html">Tietoa meistä</a>
+        <a href="lomake.html">Ota Yhteyttä</a>
+        <a href="ostoskori.html" class="active" ><i class="fas fa-shopping-cart"></i> Ostoskori</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+<!-------------------- Breadcrumbs ------------------------>
+    <div>
+        <ul class="breadcrumb">
+            <li><a href="#">Tuoteet</a></li>
+            <li>Ostoskori</li>
+          </ul>
+    </div>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tuoteet</th>
+                    <th>Hinta</th>
+                    <th>Määrä</th>
+                    <th>Yhteensä</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <section class="cart-item">
+                            <img src="Kuvat/jade-plant.png" alt="Product 1">
+                            <p>Rahapuu</p>
+                        </section>
+                    </td>
+                    <td>€9.99</td>
+                    <td> &#60;  2   &#62; </td>
+                    <td>€19.98</td>
+                    <td>
+                        <button class="remove-button"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <section class="cart-item">
+                            <img src="Kuvat/mosoes-in-the-cradle.png" alt="Product 2">
+                            <p>Juoru</p>
+                        </section>
+                    </td>
+                    <td>€9.99</td>
+                    <td> &#60;   1   &#62; </td>
+                    <td>€9.99</td>
+                    <td>
+                        <button class="remove-button"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Kokonaissumma:</td>
+                    <td>$29.97</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        <div>
+            <button class="cart-btns">Jatkaa ostoksia</button>
+            <button class="cart-btns">Kassalle</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Web-ohjelmointikoulutus</p>
+    </footer>
+<!-------------------- Javascript Code ------------------------>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("my-nav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+
+</body>
+</html>
