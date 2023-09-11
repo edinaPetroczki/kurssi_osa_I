@@ -107,14 +107,6 @@
                     consectetur adipiscing elit. In hac habitasse platea dictumst. 
                     Pellentesque porttitor condimentum diam sit amet condimentum. Nam id 
                     odio magna, eu dictum nibh. Vestibulum consequat scelerisque luctus.</p>
-                    
-                    <p>Integer lacinia velit eget est tristique eget elementum metus 
-                    venenatis. Cras leo erat, venenatis sit amet laoreet nec, imperdiet ac 
-                    risus. Fusce vitae risus enim, elementum scelerisque lectus. Nullam 
-                    consequat faucibus magna sed tempus. Quisque libero libero, lacinia 
-                    commodo dapibus rhoncus, cursus et metus. Proin hendrerit mi et libero 
-                    vehicula consectetur. Donec eros elit, suscipit non tristique ac, 
-                    imperdiet eu dolor. Vivamus sollicitudin luctus sollicitudin.</p>
 
                 </div>
             </div>
