@@ -1,5 +1,6 @@
 :root {
     --bone: #DAD0BE;
+    --floralwhite:  #fffaf0;
 }
 
 #main-text {
@@ -7,7 +8,6 @@
     margin-left: 5%;
     margin-right: 5%;
     font-size: large;
-
 }
 
 #lista {
@@ -86,6 +86,17 @@ textarea {
 footer {
   text-align: center;
 }
+
+fieldset {
+    background: url(Kuvat/notepad.jpg)  no-repeat center fixed;
+    
+}
+
+Label, input, select {
+    position: relative;
+    font-weight: bolder;
+}
+
 
 @media screen and (max-width: 600px) {
     .row {

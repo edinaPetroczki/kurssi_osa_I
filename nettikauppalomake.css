@@ -8,14 +8,12 @@ form {
     padding: 10px;
     border: 1px solid #DAD0BE;
     border-radius: 6px;
-    background-color: #fffaf0;
 }
 body {
-    background: url(Kuvat/paperbags.jpg)  no-repeat center fixed;
+    background: url(Kuvat/notepad.jpg)  no-repeat center fixed;
     opacity: 0.9;
 }
 #title {
-    background-color: #fffaf0;
     border-top: 1px solid black;
     border-radius: 6px;
     padding-left: 5px;

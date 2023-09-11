@@ -1,6 +1,17 @@
+:root {
+    --floralwhite:  #fffaf0;
+    --snow: #fffdf6;
+    --brown: #8a4700;
+}
+
+body {
+    background-image: url(Kuvat/piano.jpg);
+}
+
 #sailio {
     width: 1000px;
     margin: auto;
+    position: relative;
 }
 
 .container {
@@ -14,17 +25,61 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 150px;
+    background-image: radial-gradient(var(--brown), rgb(32, 32, 32));
+
 }
 
 #navi2{
     position: absolute;
     top: 0;
     right: 0;
+    width: 150px;
+    background-image: radial-gradient(var(--brown), black);
+    
 }
 
 #sisalto {
     width: 650px;
     position: relative;
     display: inline-block;
+    padding: 20px;
+    text-align: justify;
+    background-color: var(--floralwhite);
+    opacity: 0.9;
+    border: 4px, groove, var(--brown);
     
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    background-color: var(--floralwhite);
+    opacity: 0.9;
+    margin: 2px;
+    padding: 3px 20px;
+}
+
+li {
+    list-style: square;
+}
+
+a  {
+    color: var(--brown);
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.linkkiotsikko {
+    text-align: center;
+    margin: 2px;
+    padding: 0px;
+    color: var(--floralwhite);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
